@@ -1,511 +1,176 @@
-<!DOCTYPE HTML>
-<!--
-	원더의 개인 홈페이지로 오신것을 환영합니다!!!
--->
+<!doctype html>
 <html>
-	<head>
-		<title>원더의 홈페이지!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css"/>
-	</head>
-	<body class="is-preload">
-
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo">원더</h1>
-					<p><!--[-->디스코드봇 개발자 원더입니다!<!--]--><br />
-					<!--[-->게임도 좋아해요!<!--]--></p>
-				</header>
-				<nav id="nav">
-					<ul>
-                        <li><a href="#about" class="active">원더가 누구인가요?</a></li>
-                        <li><a herf="#info">원더의 정보</a></li>
-						<li><a href="#do">뭘 할 줄 알죠?</a></li>
-						<li><a href="#three">작품을 보여주세요!</a></li>
-						
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://twitter.com/Wonderbot1128" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCFQ148QjdlOF390wXlj04oA" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-						<li><a href="mailto:wonderbotsupport@naver.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- about -->
-							<section id="about">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>안녕하세요, 원더입니다!</h2>
-										<p><!--[-->원더의 개인 홈페이지 입니다.<!--]--><br />
-										<!--[--><a href="http://invite.gg/wonderbot">이곳</a>에서 원더를 디스코드에서 만나보세요!<!--]-->.</p>
-									
-									<p>원더를 소개하고 있는 작은 개인 홈페이지입니다! <br> 방문해주셔서 감사합니다.</p>
-									<p>원더는 아주 평범한 디스코드 봇 개발자입니다. 게임도 하고, 유튜브도 보고 트위터도	하고 등등	아무튼 심심해서	저를 소개해볼겸 만들어본 홈페이지에요!</p>
-                                
-                            
-                                 </header>
-                                </div>
-							</section>
-<section id="info">
-    <div class="container">
-        <h3>원더의 정보</h3>
-        <p>원더랑 친해질 때 알아두면 좋을꺼에요!</p>
-            <h3>원더를 부르는 방법</h3>
-                
-            <p><i class="icon fa-star"></i> 옆에 있는 이름으로 불러주면 고맙겠어요!</p>
-            <ul>
-                    <li>한국어</li>
-                <ul>
-                    <li><i class="icon fa-star"></i> 원더</li>
-                        <li>원더랜드</li>
-                        <li>원더랜드파크</li>
-                        <li>원더봇 ((저 봇 아님 ㅠㅠ</li>
-                        <li><s>우와 환상의 나라 원더랜드다!</s>((확 그냥 죽여버립니다(?)</li>
-                </ul>
-                    </li>
-                    
-                    <li>English</li>
-                <ul>
-                    <li><i class="icon fa-star"></i> wonderlandpark</li>
-                        <li>wonder</li>
-                        <li>wonderland</li>
-                        <li><s>wonderwonder</s>((Not that nice :(</li>
-                </ul>
-            </ul>
-            <h3>그외 기타 정보</h3>
-            <h4>선호하는 에디터</h4>
-            <ul>
-                    
-                    <li><i class="icon fa-star"></i> Visual Studio Code</li>
-                        <li>Sublime Text 3</li>
-                        <li>Notepad++</li>
-                        <li>Visual Studio</li>
-                        <li><s>메모장</s></li>
-                </ul>
-            <p>원더를 상징하는 개인색상입니다!</p>
-            <blockquote class="" style="border-left-color: rgb(0, 235, 255);"> <p>제 개인색상은 <strong>아쿠아(AQUA)</strong>색이고<br>HEX코드는 <strong>#00EBFF</strong>이며, RGB는 <strong>rgb(0, 235, 255)</strong>이며, HSL은 <strong>hsl(185, 100%, 50%)</strong>입니당!<br></p></blockquote>
+  
+  <head>
+    
+    
+    <title>This is wonderlandpark</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/wonder.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="assets/css/semantic/dist/semantic.min.js"></script>
+    <script src="assets/script/wonder.js"></script>
+  </head>
+  <body>
+    
+    <header>
+      <div class="ui menu">
+        <a class="item">
+            <i class="terminal icon"></i>
+            wonderlandpark
+        </a>
+        <div class="ui right simple dropdown item inverted" id="dropdown"><i class="adress book icon"></i>
+            Links <i class="dropdown icon"></i>
+            <div class="menu">
+                  <a class="item" href="https://discord.wonderbot.xyz"><i class="discord icon"></i>원더봇 서포트</a>
+                  <a class="item" href="https://land.discord.wonderbot.xyz"><i class="discord icon"></i>원더랜드</a>
+                  <a class="item" href="https://twitter.com/wonderlandpark0"><i class="twitter icon"></i>트위터</a>
+                  <a class="item" href="https://github.com/wonderlandpark"><i class="github icon"></i>깃허브</a>
+              </div>
+            </div>
               
-    </div>
-</section>
+            <div class="ui simple dropdown item inverted" id="dropdown"><i class="language icon"></i>
+                Language <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="flag us"></i>English</a>
+                    <a class="item"><i class="flag kr"></i>한국어</a>
+                  </div>
+                </div>
+            
+               
+                
 
-						<!-- do -->
-							<section id="do">
-								<div class="container">
-									<h3>뭘 할줄 알죠?</h3>
-									<p>원더가 할 줄 알고 좋아하는 것들을 대충적어보았어요!</p>
-									<ul class="feature-icons">
-										<li class="fa-code"><!--[-->코딩<br>(Javascript, C, HTML, Python(대충))<!--]--></li>
-										<li class="fa-comments-o"><!--[-->채팅 좋아요! 특히 디스코드 사랑해요!<!--]--></li>
-										<li class="fa-gamepad"><!--[-->게임은 심심할 때 자주해요!(개발이 더 재밌다능)<br>마크,팔라딘스,OSU!,포나, LOL 등등 해요!<!--]--></li>
-										<li class="fa-linux style="color:black;"><!--[-->리눅스 다룰 줄 알아요!<!--]--></li>
-										<li class="fa-youtube-play style="color:red;"><!--[-->유튜브 자주 보져!<!--]--></li>
-										<li class="fa-twitter"><!--[-->트위터해요!<!--]--></li>
-									</ul>
-								</div>
-                            </section>
+                              
+          </div>
+        </div>
+    </header>
+    <section id="main">
+
+        
+                <div class="ui container" id="bg-text">
+                        <div class="ui center aligned container">
                             
-                        
+                            <h2 class="ui blue header">
+                                <code>console.log('Hello, wonderlandpark');</code>
+                                <br>
+                                <div class="ui green sub header">
+                                <strong>원더는 아주 평범한 대한민국의 학생 개발자입니다.<br>열심히 배워나가는 중입니다!<br>많은 프로젝트를 제작중이니 기대해주세요!</strong>
+                                </div>
+                            </h2>
+                            </div>
+                        </div> 
+                
+            </div>
+    </section>  
+        <div class="ui divider"></div>
+        <article id="ability" class="ui section">
+          <div class="ui container">
+            <h2 class="ui left aligned header">능력 현황</h2>
+            <p class="ui left aligned header">아래는 원더가 가능한/학습중인 능력입니다!</p>
+            <div class="ui yellow image label">
+              <i class="icon js"></i><i class="icon node js"></i>
+              JavaScript
+              <a class="detail">주로 사용</a>
+            </div>
+            <div class="ui blue image label">
+                <i class="icon html5"></i>HTML5
+                <a class="detail">숙련중</a>
+              </div>
+            <div class="ui orange image label">
+                <i class="icon css3"></i>CSS
+                <a class="detail">숙련중</a>
+              </div>
+              <div class="ui pink image label">
+                  <i class="icon linux"></i>Linux
+                  <a class="detail">사용중</a>
+                </div>
+                <br   ><br   >
+                <div class="ui green image label">
+                 <i class="icon go"></i>Go
+                  <a class="detail">학습중</a>
+                </div>
+          </div>
+    
+        </article>
+        <br>
+        <div class="ui divider"></div>
+        <article id="projects" class="ui section">
+            <div class="ui container">
+                <h2 class="ui left aligned header">프로젝트</h2>
+                <p class="ui left aligned header">아래는 원더가 제작한 프로젝트들 입니다.</p>
+             <div class="ui relaxed divided list">
+               <div class="item">
+                 <i class="large discord black middle aligned icon"></i>
+                 <div class="content">
+                   <div class="header">
+                      <a href="https://wonderbot.xyz">Wonder_Bot</a>
+                      <div class="ui blue mini label">Source Private</div>
+                   </div>
+                  </div>
+                 <a class="description">
+                  관리, 도박, 재미, 미니게임 등의 기능이 있는 디스코드 챗봇<br><br> 
+                  <div class="ui mini tag label yellow"><i class="icon node js"></i>JavaScript (NODE.JS)</div>
+                  <div class="ui mini tag label blue">750 SERVERS</div>
+                  <div class="ui mini tag label green">100000 USERS</div>
+                 </a>
+               </div>
+               <div class="item">
+                  <i class="large github black middle aligned icon"></i>
+                  <div class="content">
+                    <div class="header">
+                       <a href="https://github.com/wonderlandpark/Discord-Javascript-Notice">Discord-Javascript-Notice</a>
+                       <div class="ui orange mini label">On Process</div>
+                    </div>
+                   </div>
+                  <a class="description">
+                   디스코드 봇 제작자들을 위한 쉬운 전체 서버 공지 시스템<br>
+                    <br>
+                   <div class="ui mini tag label yellow"><i class="icon noed js"></i>JavaScript (NODE.JS)</div>
+                  </a>
+                </div>
+                <div class="item">
+                    <i class="large npm middle aligned icon" style="color: #4183c4;" id="icon-href" onclick="location.href='https://npmjs.com/wonderlangpark'"></i>
+                    <i class="large github middle aligned icon" style="color: #4183c4;" id="icon-href" onclick="location.href='https://github.com/wonderlandpark/wonderlangpark'"></i>
+                    <div class="content">
+                      <div class="header">
+                         <a href="https://npmjs.com/wonderlangpark">wonderlangpark</a>
+                         <div class="ui teal mini label"><i class="flag kr"></i>Only Korean</div>
+                      </div>
+                     </div>
+                    <a class="description">
+                     한국어-원더어 번역기<br>
+                      <br>
+                     <div class="ui mini tag label yellow"><i class="icon node js"></i>JavaScript (NODE.JS)</div>
+                    </a>
+                  </div>
+                <div class="item">
+                    <i class="large npm middle aligned icon" onclick="location.href=''"></i>
+                    <i class="large github middle aligned icon"></i>                      
+                      <div class=content>
+                        <div class="header">
+                           <a href="">Simple Logger</a>
+                           <div class="ui orange mini label">On Process</div>
+                        </div>
+                       </div>
+                      <a class="description">
+                       콘솔 로깅을 아름답게, 쉽게.<br>
+                        <br>
+                       <div class="ui mini tag label blue"><i class="icon ts"></i>TypeScript</div>
+                      </a>
+                    </div>
+             </div>
+            </div>
+            
+        </article>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>작품을 보여주세요!</h3>
-									<p>원더가 만들어본 작품을 써보았어요!</p>
-									<div class="features">
-										<article>
-											<a class="image"><img src="images/nocpic.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->[발전중] 쉽고 더 나은 디스코드 원더봇<!--]--></h4>
-												<p>원더봇은 자바스크립트로 제작된 디스코드봇이다. 원더가 직접 제작했으며, 11월 28일 제작을 시작해, 꾸준한 성장을 이루었다.<br> <a href="https://wonderbot.xyz">홈페이지</a><br><a href="https://invite.gg/wonderbot">공식 디스코드</a></p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/nopic.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->[개발중] DJNK Project<!--]--></h4>
-												<p>DJNK는 <br> Discord Javascript Notice Korean Project<br> 를 의미하며, 디스코드 개발자들을 위한 전체공지 시스템이며, 개발중이다.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/nopic.jpg" alt="" /></a>
-											<div class="inner">
-												<h4><!--[-->[개발중] 당신의 디스코드 서버 맞춤봇<!--]--></h4>
-												<p>뮤직, 투표, 커스텀 커맨드 기능등을 위주로 개발중이며, 자신의 서버에 맞게 맞춤으로 설정하여 이용할  수 있다.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
 
-						
-									
-						<!-- Five -->
-						<!--
-							<section id="five">
-								<div class="container">
-									<h3>Elements</h3>
-
-									<section>
-										<h4>Text</h4>
-										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-										<hr />
-										<header>
-											<h4>Heading with a Subtitle</h4>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<header>
-											<h5>Heading with a Subtitle</h5>
-											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-										</header>
-										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-										<hr />
-										<h2>Heading Level 2</h2>
-										<h3>Heading Level 3</h3>
-										<h4>Heading Level 4</h4>
-										<h5>Heading Level 5</h5>
-										<h6>Heading Level 6</h6>
-										<hr />
-										<h5>Blockquote</h5>
-										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-										<h5>Preformatted</h5>
-										<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-									</section>
-
-									<section>
-										<h4>Lists</h4>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<h5>Unordered</h5>
-												<ul>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-												<h5>Alternate</h5>
-												<ul class="alt">
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Sagittis adipiscing lorem eleifend.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ul>
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<h5>Ordered</h5>
-												<ol>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-													<li>Dolor pulvinar etiam magna etiam.</li>
-													<li>Etiam vel felis at lorem sed viverra.</li>
-													<li>Felis enim feugiat dolore viverra.</li>
-												</ol>
-												<h5>Icons</h5>
-												<ul class="icons">
-													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-												</ul>
-											</div>
-										</div>
-										<h5>Actions</h5>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Default</a></li>
-										</ul>
-										<ul class="actions small">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<div class="row">
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary">Default</a></li>
-													<li><a href="#" class="button">Default</a></li>
-													<li><a href="#" class="button alt">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6 col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small">Small</a></li>
-													<li><a href="#" class="button small">Small</a></li>
-													<li><a href="#" class="button alt small">Small</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary fit">Default</a></li>
-													<li><a href="#" class="button fit">Default</a></li>
-													<li><a href="#" class="button alt fit">Default</a></li>
-												</ul>
-											</div>
-											<div class="col-3 col-6-medium col-12-xsmall">
-												<ul class="actions stacked">
-													<li><a href="#" class="button primary small fit">Small</a></li>
-													<li><a href="#" class="button small fit">Small</a></li>
-													<li><a href="#" class="button alt small fit">Small</a></li>
-												</ul>
-											</div>
-										</div>
-									</section>
-
-									<section>
-										<h4>Table</h4>
-										<h5>Default</h5>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-
-										<h5>Alternate</h5>
-										<div class="table-wrapper">
-											<table class="alt">
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Description</th>
-														<th>Price</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Item One</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Two</td>
-														<td>Vis ac commodo adipiscing arcu aliquet.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Three</td>
-														<td> Morbi faucibus arcu accumsan lorem.</td>
-														<td>29.99</td>
-													</tr>
-													<tr>
-														<td>Item Four</td>
-														<td>Vitae integer tempus condimentum.</td>
-														<td>19.99</td>
-													</tr>
-													<tr>
-														<td>Item Five</td>
-														<td>Ante turpis integer aliquet porttitor.</td>
-														<td>29.99</td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2"></td>
-														<td>100.00</td>
-													</tr>
-												</tfoot>
-											</table>
-										</div>
-									</section>
-
-									<section>
-										<h4>Buttons</h4>
-										<ul class="actions">
-											<li><a href="#" class="button primary">Primary</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt">Alternate</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary large">Large</a></li>
-											<li><a href="#" class="button">Default</a></li>
-											<li><a href="#" class="button alt small">Small</a></li>
-										</ul>
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-											<li><a href="#" class="button alt fit">Fit</a></li>
-										</ul>
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-										</ul>
-										<ul class="actions">
-											<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-											<li><a href="#" class="button icon fa-download">Icon</a></li>
-											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
-										</ul>
-										<ul class="actions">
-											<li><span class="button primary disabled">Primary</span></li>
-											<li><span class="button disabled">Default</span></li>
-											<li><span class="button alt disabled">Alternate</span></li>
-										</ul>
-									</section>
-
-									<section>
-										<h4>Form</h4>
-										<form method="post" action="#">
-											<div class="row gtr-uniform">
-												<div class="col-6 col-12-xsmall">
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-xsmall">
-													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<select name="demo-category" id="demo-category">
-														<option value="">- Category -</option>
-														<option value="1">Manufacturing</option>
-														<option value="1">Shipping</option>
-														<option value="1">Administration</option>
-														<option value="1">Human Resources</option>
-													</select>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-													<label for="demo-priority-low">Low Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-normal" name="demo-priority">
-													<label for="demo-priority-normal">Normal Priority</label>
-												</div>
-												<div class="col-4 col-12-medium">
-													<input type="radio" id="demo-priority-high" name="demo-priority">
-													<label for="demo-priority-high">High Priority</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-copy" name="demo-copy">
-													<label for="demo-copy">Email me a copy of this message</label>
-												</div>
-												<div class="col-6 col-12-medium">
-													<input type="checkbox" id="demo-human" name="demo-human" checked>
-													<label for="demo-human">I am a human and not a robot</label>
-												</div>
-												<div class="col-12">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" /></li>
-														<li><input type="reset" value="Reset" class="alt" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-									<section>
-										<h4>Image</h4>
-										<h5>Fit</h5>
-										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
-										<div class="box alt">
-											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											</div>
-										</div>
-										<h5>Left &amp; Right</h5>
-										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									</section>
-
-								</div>
-							</section>
-						-->
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; 원더. All rights reserved. <br> 모든 권리를 보유합니다.</li> <li>Design: <a href="http://html5up.net">HTML5 UP</a><br> 디자인</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        
+                
+             
+                
+  </body>
+  
 </html>
+
+
+
