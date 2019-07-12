@@ -39,10 +39,13 @@
     width: 80%;
     padding: 20px;
     text-align: center;
+<<<<<<< HEAD
   }
 
   #icon-href:hover{
       cursor: pointer;
       opacity: 1 !important;
 
+=======
+>>>>>>> ea097c05df1141ccfb0b004c79ea22df17c5044d
   }
