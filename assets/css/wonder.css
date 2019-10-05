@@ -43,3 +43,9 @@
       opacity: 1 !important;
 
   }
+
+  .card {
+    width: calc(25% - 1.5em);
+    margin-left: .75em;
+    margin-right: .75em;
+  }
