@@ -1,6 +1,6 @@
 # 원더와 원더봇의 홈페이지를 찾아가시려고요?
 
-Now using https://github.com/wonderlandpark/portofolio
+Now using https://github.com/wonderlandpark/portfolio
 
 ```js
 console.log('Hello, Wonder.')
